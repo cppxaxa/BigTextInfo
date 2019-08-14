@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/BigInfoText.css" />
+        <script src="js/BigInfoText.js"></script>
+        <script>
+            bigInfoText = new BigInfoText();
+            b = bigInfoText;
+            console.log(bigInfoText.displayTimeout);
+            
+            $("document").ready(function(){
+                $("#apply").click(function(){
+                    b.setText($("#inputText").val());
+                });
+                $("#toggle").click(function(){
+                    b.toggle();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="BigInfoText" class="BigInfoText" style="left: 50%; top: 50%; display: none;">CHILLOUT</div>
+
+        <div>
+            <input id="inputText" />
+            <span><button id="apply">Apply</button><button id="toggle">Toggle</button></span>
+        </div>
+    </body>
+</html>

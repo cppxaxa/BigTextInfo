@@ -1,0 +1,11 @@
+.BigInfoText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial Black';
+    font-size: 95px;
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    mix-blend-mode: multiply;
+}
